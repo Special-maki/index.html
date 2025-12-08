@@ -1,0 +1,112 @@
+/* ジャイアント加賀.css - 緑のライン強調版 */
+
+/* --- 1. 全体設定 --- */
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: #333;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 40px;
+}
+
+/* --- 2. ヘッダー (header, h1) のスタイル --- */
+header {
+    /* ヘッダー全体を鮮やかな緑で塗りつぶし、ページの顔を際立たせる */
+    background-color: #4CAF50; /* 鮮やかな緑 */ 
+    color: white;
+    padding: 35px 0 25px 0;
+    text-align: center;
+    /* 左右の余白をボディ幅に合わせて調整 */
+    margin: 0 -20px 40px -20px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    border-radius: 0 0 10px 10px; 
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    font-size: 1.2em;
+    color: #E8F5E9; /* 明るい緑でキャッチコピーを配置 */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* --- 3. セクション見出し (H2) のスタイル --- */
+h2 {
+    color: #FF9800; /* 見出し文字はオレンジでアクセント */
+    /* 左側のボーダーを太い緑のラインに変更 */
+    border-left: 8px solid #4CAF50; 
+    padding-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+
+/* --- 4. コンテンツセクション (section) のスタイル --- */
+main section {
+    /* 各セクションの下に緑のライン（ボーダー）を追加して区切りを明確に */
+    border-bottom: 2px solid #C8E6C9; /* 薄い緑の線 */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+/* 最後のセクションには区切り線が不要なため、下線を削除 */
+main section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+/* --- 5. リスト (ul li) の装飾 --- */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+ul li {
+    /* 箇条書きマークを鮮やかな緑に変更 */
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%234CAF50'/%3E%3C/svg%3E") no-repeat left 6px; 
+    padding-left: 28px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    background-size: 16px 16px;
+}
+strong {
+    color: #00704d; /* 強調文字を濃い緑に */
+}
+
+/* --- 6. 区切り線と画像 --- */
+hr {
+    border: none;
+    /* 水平線を太めの緑の実線に変更 */
+    border-top: 3px solid #81C784; 
+    margin: 50px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    border-radius: 12px;
+}
+
+/* --- 7. フッター (footer) のスタイル --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50; 
+    color: white;
+    margin-top: 40px;
+    margin-left: -20px;
+    margin-right: -20px; 
+    border-radius: 10px 10px 0 0; /* 上辺の角を丸く */
+}
+footer p, footer address {
+    margin: 5px 0;
+}
