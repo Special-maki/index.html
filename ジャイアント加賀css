@@ -8,11 +8,20 @@
 /* ページ全体（body）の基本設定 */
 /* ------------------------------------------- */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* 読みやすいフォントを設定 */
-    background-color: #f8f8f8; /* ページ全体の背景色を薄いグレーに */
-    color: #333; /* 標準の文字色を設定 */
-    margin: 20px; /* ページの端に適切な余白を設定 */
-    line-height: 1.6; /* 行間を広げて読みやすくする */
+    /* 標準的なフォントを指定し、読みやすくします */
+    font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+    /* ページの上下左右の余白をなくします */
+    margin: 0;
+    padding: 0;
+    /* 背景色を白に近い色にします */
+    background-color: #f8f8f8;
+    /* 文字色を濃い灰色にします */
+    color: #333;
+    /* ページの中央にコンテンツを配置するための最大幅を設定 */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
 
